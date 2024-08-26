@@ -1,0 +1,30 @@
+<table class="table table-striped " >
+    <thead>
+      <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">Año</th>
+        <th scope="col">Autor</th>
+        <th scope="col">Paginas</th>
+        
+      </tr>
+    </thead>
+    <tbody  *ngFor="let item of data">
+        
+      <tr>
+        
+        <td>{{item.autor}}</td>
+        <td>{{item.titulo}}</td>
+        <td>{{item.anio}}</td>
+        <td>{{item.nPaginas}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="input-group-btn">
+    <button (click)="cambiarValor(5)"
+            [ngClass]="btnClass"
+            type="button" 
+            class="btn btn-primary">
+        BUSCAR
+    </button>
+</span>

@@ -1,0 +1,24 @@
+<form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+  <div>
+    <label  class="form-label" for="titulo">titulo:</label>
+    <input class="form-control" type="text" id="titulo" formControlName="titulo" value="titulo1">
+    
+  </div>
+  <div>
+    <label  class="form-label" for="anio">año:</label>
+    <input class="form-control" type="text" id="anio" formControlName="anio" value="titulo1">
+    
+  </div>
+  <div>
+    <label   class="form-label" for="nPaginas">Paginas:</label>
+    <input  class="form-control" type="text" id="nPaginas" formControlName="nPaginas">
+    
+  </div>
+  <div>
+    <label  class="form-label" for="autor">autor:</label>
+    <input class="form-control" type="text" id="autor" formControlName="autor">
+    
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="formulario.invalid">Enviar</button>
+</form>

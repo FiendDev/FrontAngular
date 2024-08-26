@@ -1,0 +1,24 @@
+<form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+  <div>
+    <label  class="form-label" for="Rut">Rut:</label>
+    <input class="form-control" type="text" id="Rut" formControlName="Rut" value="Rut">
+    
+  </div>
+  <div>
+    <label  class="form-label" for="Nombre">Nombre:</label>
+    <input class="form-control" type="text" id="Nombre" formControlName="Nombre" value="Nombre">
+    
+  </div>
+  <div>
+    <label  class="form-label" for="fecha">fecha:</label>
+    <input class="form-control" type="text" id="fecha" formControlName="fecha">
+    
+  </div>
+  <div>
+    <label  class="form-label" for="email">Email:</label>
+    <input class="form-control" type="text" id="email" formControlName="email">
+    
+  </div>
+
+  <button type="submit" class="btn btn-primary" >Enviar</button>
+</form>

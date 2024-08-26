@@ -1,0 +1,24 @@
+
+  
+    <table class="table table-striped " >
+      <thead>
+        <tr>
+          <th scope="col">autor</th>
+          <th scope="col">titulo</th>
+          <th scope="col">anio</th>
+          <th scope="col">nPaginas</th>
+          
+        </tr>
+      </thead>
+      <tbody  *ngFor="let item of data">
+        <tr>
+          
+          <td>{{item.autor}}</td>
+          <td>{{item.titulo}}</td>
+          <td>{{item.anio}}</td>
+          <td>{{item.nPaginas}}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+
